@@ -23,6 +23,10 @@ jobs:
         run: |
           if [ -f package.json ]; then npm install; fi
 
+      - name: Check syntax
+        run: |
+          if [ -f index.js ]; then node --check index.js; fi
+
       - name: Run Node program
         run: |
           if [ -f index.js ]; then node index.js; else echo "No entry file found"; fi
