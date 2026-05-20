@@ -1,3 +1,1 @@
-console.log("hello world")
-
-fgfdg
+conso.log("hhh
