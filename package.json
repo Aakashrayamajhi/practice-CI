@@ -4,7 +4,7 @@
   "description": "",
   "main": "sum.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "lint": "eslint .",
     "start": "node index.js"
   },
@@ -24,6 +24,7 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "eslint": "^10.4.0"
+    "eslint": "^10.4.0",
+    "jest": "^30.4.2"
   }
 }
